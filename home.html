@@ -61,27 +61,27 @@
         </div>
 
         <div class="card-container w-11/12 mx-auto py-3 grid grid-cols-3 gap-4">
-            <button class="btn h-full py-4 btn-soft btn-primary  flex-col items-center">
+            <button onclick="showonly('Add-money')" class="btn h-full py-4 btn-soft btn-primary  flex-col items-center">
                 <img class="w-[20px] h-[20px] " src="./assets/opt-1.png" alt="">
                 <p>Add Money</p>
             </button>
-            <button class="btn h-full py-4 btn-soft btn-primary  flex-col items-center">
+            <button onclick="showonly('cashout')" class="btn h-full py-4 btn-soft btn-primary  flex-col items-center">
                 <img class="w-[20px] h-[20px]" src="./assets/opt-2.png" alt="">
-                <p>Chashout</p>
+                <p>Cashout</p>
             </button>
-            <button class="btn h-full py-4 btn-soft btn-primary  flex-col items-center">
+            <button onclick="showonly('Transfer-Money')" class="btn h-full py-4 btn-soft btn-primary  flex-col items-center">
                 <img class="w-[20px] h-[20px]" src="./assets/opt-3.png" alt="">
                 <p>Transfer Money</p>
             </button>
-            <button class="btn h-full py-4 btn-soft btn-primary  flex-col items-center">
+            <button onclick="showonly('get-bonus')" class="btn h-full py-4 btn-soft btn-primary  flex-col items-center">
                 <img class="w-[20px] h-[20px]" src="./assets/opt-4.png" alt="">
                 <p>Get Bonus</p>
             </button>
-            <button class="btn h-full py-4 btn-soft btn-primary  flex-col items-center">
+            <button onclick="showonly('pay-bill')" class="btn h-full py-4 btn-soft btn-primary  flex-col items-center">
                 <img class="w-[20px] h-[20px]" src="./assets/opt-5.png" alt="">
                 <p>Pay Bill</p>
             </button>
-            <button class="btn h-full py-4 btn-soft btn-primary  flex-col items-center">
+            <button onclick="showonly('transactions')" class="btn h-full py-4 btn-soft btn-primary  flex-col items-center">
                 <img class="w-[20px] h-[20px]" src="./assets/opt-6.png" alt="">
                 <p>Transactions</p>
             </button>
@@ -89,7 +89,7 @@
         </div>
     </section>
 
-    <section id="Add-money" class="w-11/12 mx-auto py-5">
+    <section id="Add-money" class="w-11/12 mx-auto py-5 ">
         <h1 class="font-bold text-2xl">Add Money</h1>
 
         <div class="form pt-10 ">
@@ -123,7 +123,7 @@
 
     </section>
 
-    <section id="cashout" class="w-11/12 mx-auto py-5">
+    <section id="cashout" class="w-11/12 mx-auto py-5 ">
         <h1 class="font-bold text-2xl">Cash Out</h1>
 
         <div class="form pt-10 ">
@@ -150,7 +150,7 @@
 
     </section>
 
-    <section id="Transfer-Money" class="w-11/12 mx-auto py-5">
+    <section id="Transfer-Money" class="w-11/12 mx-auto py-5 ">
         <h1 class="font-bold text-2xl">Transfer Money</h1>
 
         <div class="form pt-10 ">
@@ -168,7 +168,7 @@
                             placeholder="Enter 4 Digit Pin" />
 
 
-                        <button id="Cashout-btn" class="btn btn-primary mt-4 rounded-2xl"> Send Now</button>
+                        <button id="transfer-money-btn" class="btn btn-primary mt-4 rounded-2xl"> Send Now</button>
                     </fieldset>
                 </div>
             </div>
@@ -177,7 +177,7 @@
 
     </section>
 
-    <section id="get-bonus" class="w-11/12 mx-auto py-5">
+    <section id="get-bonus" class="w-11/12 mx-auto py-5 ">
         <h1 class="font-bold text-2xl">Get Bonus</h1>
 
         <div class="form pt-10 ">
@@ -191,7 +191,7 @@
                         
 
 
-                        <button id="Cashout-btn" class="btn btn-primary mt-4 rounded-2xl"> Get Bonus</button>
+                        <button id="get-bonus-btn" class="btn btn-primary mt-4 rounded-2xl"> Get Bonus</button>
                     </fieldset>
                 </div>
             </div>
@@ -200,7 +200,7 @@
 
     </section>
 
-    <section id="pay-bill" class="w-11/12 mx-auto py-5">
+    <section id="pay-bill" class="w-11/12 mx-auto py-5 ">
         <h1 class="font-bold text-2xl">pay Bill</h1>
 
         <div class="form pt-10 ">
@@ -225,12 +225,19 @@
                             placeholder="Enter 4 Digit Pin" />
 
 
-                        <button id="Cashout-btn" class="btn btn-primary mt-4 rounded-2xl">Pay Bill</button>
+                        <button id="pay-bill-btn" class="btn btn-primary mt-4 rounded-2xl">Pay Bill</button>
                     </fieldset>
                 </div>
             </div>
         </div>
 
+
+    </section>
+
+    <section id="transactions" class="w-11/12 mx-auto py-5 ">
+        <h1 class="font-bold text-2xl">Transactions</h1>
+
+        
 
     </section>
 
@@ -247,6 +254,10 @@
 
     <script src="./script/cashout.js"></script>
     <script src="./script/addmoney.js"></script>
+    <script src="./script/machine.js"></script>
+    <script src="./script/paybill.js"></script>
+    <script src="./script/bonus.js"></script>
+    <script src="./script/transfer.js"></script>
 
 
 
