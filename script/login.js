@@ -16,7 +16,7 @@ document.getElementById("btn-id").addEventListener("click",function(){
     if(mobileNumber=="01704712465" && pin== "8048"){
         alert("Login successful!");
         // window.location.replace("/home.html");back e jawa jai na 
-        window.location.assign("../home.html");
+        window.location.assign("home.html");
 
     }
     else{
