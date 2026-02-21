@@ -13,7 +13,7 @@ document.getElementById("btn-id").addEventListener("click",function(){
     //  console.log("PIN entered:", inputPin.value);
     const pin = inputPin.value;
 
-    if(mobileNumber=="01704712465" && pin== "8048"){
+    if(mobileNumber.length == 11 && pin.length == 4){
         alert("Login successful!");
         // window.location.replace("/home.html");back e jawa jai na 
         window.location.assign("home.html");
