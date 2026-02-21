@@ -1,6 +1,6 @@
 document.getElementById("get-bonus-btn").addEventListener("click", function () {
 
-    const coupon = document.getElementById("input-Agentnumner").value;
+    const coupon = document.getElementById("bonus-coupon").value;
 
     if (coupon === "") {
         alert("Enter bonus coupon");

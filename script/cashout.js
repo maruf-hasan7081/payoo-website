@@ -1,42 +1,26 @@
-document.getElementById("Cashout-btn").addEventListener("click", function () {
+document.getElementById("cashout-btn").addEventListener("click", function () {
 
-
-    const inputAgentNumber = document.getElementById("input-Agentnumner");
+    const inputAgentNumber = document.getElementById("cash-agent");
     const agentNumber = inputAgentNumber.value;
-     console.log("Agent number entered:", inputAgentNumber.value);
+    console.log("Agent number entered:", agentNumber);
 
-
-
-
-
-    const inputAmount = document.getElementById("input-amount");
+    const inputAmount = document.getElementById("cash-amount");
     const amount = inputAmount.value;
-     console.log("Amount entered:", inputAmount.value);
-
+    console.log("Amount entered:", amount);
 
     const correntBalanceElement = document.getElementById("balance");
     const currentBalance = correntBalanceElement.innerText;
-     console.log("Current balance:", currentBalance);
+    console.log("Current balance:", currentBalance);
 
+    const newBalance = Number(currentBalance) - Number(amount);
 
-     newBalance = Number(currentBalance) - Number(amount);
-
-     if(newBalance < 0){
-
+    if (newBalance < 0) {
         alert("invalid amount. Your balance is not sufficient for this transaction.");
         return;
-     }
+    }
 
-
-
-
-
-
-
-    const inputPin = document.getElementById("input-pin");
+    const inputPin = document.getElementById("cash-pin");
     const pin = inputPin.value;
-    //  console.log("Pin entered:", inputPin.value);
-
 
     if (agentNumber == "01704712465" && pin == "8048") {
         
@@ -46,8 +30,5 @@ document.getElementById("Cashout-btn").addEventListener("click", function () {
     else {
         alert("Invalid agent number or PIN. Please try again.");
     }
-
-
-
 
 });

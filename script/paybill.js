@@ -1,7 +1,7 @@
 document.getElementById("pay-bill-btn").addEventListener("click", function () {
 
-    const amount = document.getElementById("input-amount").value;
-    const pin = document.getElementById("input-pin").value;
+    const amount = document.getElementById("bill-amount").value;
+    const pin = document.getElementById("bill-pin").value;
 
     if (amount === "" || isNaN(amount) || Number(amount) <= 0) {
         alert("Enter valid amount");

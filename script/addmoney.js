@@ -6,13 +6,13 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
     return;
   }
 
-  const agentNumber = document.getElementById("input-Agentnumner").value.trim();
+  const agentNumber = document.getElementById("add-agent").value.trim();
   if (agentNumber === "") {
     alert("Please enter a valid agent number.");
     return;
   }
 
-  const amountStr = document.getElementById("input-amount").value.trim();
+  const amountStr = document.getElementById("add-amount").value.trim();
   const amount = Number(amountStr);
 
   if (amountStr === "" || isNaN(amount) || amount <= 0) {
@@ -24,7 +24,7 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
   const currentBalance = Number(correntBalanceElement.innerText);
   const newbalance = currentBalance + amount;
 
-  const pin = document.getElementById("input-pin").value.trim();
+  const pin = document.getElementById("add-pin").value.trim();
 
   if (pin === "8048") {
     alert("Money added successfully!");

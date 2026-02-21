@@ -1,8 +1,8 @@
 document.getElementById("transfer-money-btn").addEventListener("click", function () {
 
-    const userNumber = document.getElementById("input-Agentnumner").value;
-    const amount = document.getElementById("input-amount").value;
-    const pin = document.getElementById("input-pin").value;
+    const userNumber = document.getElementById("transfer-user").value;
+    const amount = document.getElementById("transfer-amount").value;
+    const pin = document.getElementById("transfer-pin").value;
 
     if (userNumber === "") {
         alert("Enter user account number");
